@@ -66,6 +66,7 @@ section {
     padding-bottom: 70px;
 }
 
+
 .section-title {
     flex: 0 0 100%;
     max-width: 100%;
@@ -299,6 +300,10 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
+.home {
+    padding-top: 70px;
+}
+
 .home .home-img {
     flex: 0 0 40%;
     max-width: 40%;
@@ -332,7 +337,7 @@ h3.my-profession {
     margin: auto;
     border-radius: 5px;
     text-align: center;
-    ´position: relative;
+    position: relative;
     height: 400px;
 }
 
