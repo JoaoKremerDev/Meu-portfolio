@@ -49,3 +49,31 @@ window.addEventListener('load', () => {
 });
 
 
+
+
+
+// SWITCHER SECTION
+
+
+  const sections = document.querySelectorAll("section");
+
+  // Esconder todas as seções
+  function hideAllSections() {
+    sections.forEach(section => {
+      section.classList.add("hidden");
+    });
+  }
+  
+  // Mostrar apenas a seção selecionada
+  function showSelectedSection(id) {
+    hideAllSections();
+    const selectedSection = document.querySelector(`#${id}`);
+    const sectionId = selectedSection.id;
+    sections.forEach(section =>{
+        if(section.classList.contains(sectionId)){
+            section.classList.remove('hidden');
+            section.classList.toggle('open-effect');
+        }
+    })
+  }
+
