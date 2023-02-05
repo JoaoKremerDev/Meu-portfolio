@@ -54,10 +54,13 @@ section {
     padding: 0 30px;
     opacity: 1;
 }
-
+/* 
 .section .open-effect{
     transform: translateX(-150px);
-}
+} */
+
+
+
 
 .main-content {
     padding-left: 270px;
@@ -205,17 +208,18 @@ section {
     left: 0;
 }
 
+/* MENU MOBILE*/
 .aside .nav-toggler {
-    height: 40px;
-    width: 45px;
+    height: 60px;
+    width: 60px;
     border: 1px solid var(--bg-black-500);
     cursor: pointer;
     position: fixed;
-    left: 300px;
-    top: 20px;
+    display: none;
+    left: 30px;
+    top: 40px;
     border-radius: 5px;
     background: var(--bg-black-100);
-    display: none;
     align-items: center;
     justify-content: center;
 }
@@ -226,15 +230,16 @@ section {
     background: var(--skin-color);
     display: inline-block;
     position: relative;
+    left: 21px;
+    top: 14px;
 }
-
 .aside .nav-toggler span::before {
     content: '';
     height: 2px;
     width: 18px;
     background: var(--skin-color);
     position: absolute;
-    top: -6px;
+    top: -9px;
     left: 0;
 }
 .aside .nav-toggler span::after {
@@ -243,10 +248,19 @@ section {
     width: 18px;
     background: var(--skin-color);
     position: absolute;
-    top: 6px;
+    top: 9px;
     left: 0;
 }
 
+.menu-mobile {
+    display: none;
+}
+
+.open{
+    display: block;
+}
+
+/* FIM DO MENU-MOBILE*/
 .aside .nav {
     margin-top: 50px;
 }
@@ -273,6 +287,7 @@ section {
     color: var(--skin-color);
     margin-right: 15px;
 }
+
 
 /* home */
 .home {
@@ -398,7 +413,7 @@ h3.my-profession {
     color: var(--text-black-900);
     border-bottom: 1px solid var(--bg-black-500);
 }
-
+    
 .about .about-content .personal-info .info-item p span{
     font-weight: 400;
     color: var(--text-black-700);
@@ -748,6 +763,36 @@ h3.my-profession {
     .about .about-content .personal-info .info-item{
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    
+    .aside .nav-toggler {
+        display: block;
+        z-index: 1;
+    }
+    .menu-mobile {
+        position: fixed;    
+        left: 0px;
+        width: 100%;
+        top: 0;
+        background-color: var(--skin-color);
+        transition: all 0.3s ease;
+    }   
+
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        padding-top: 40px;
+    }   
+    
+    .menu-mobile ul li a{
+        color: var(--text-black-900);
+        font-size: 22px;
+    }
+    .menu-mobile ul li a i{
+        color: var(--skin-color);
+        margin-right: 15px;
     }
 }
 
