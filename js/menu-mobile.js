@@ -5,6 +5,7 @@ function menuShow() {
   if (menuMobile.classList.contains('open')) {
     menuMobile.classList.remove('open');
     document.querySelector('.nav-toggler span').style.transform = 'rotate(0deg)';
+    document.querySelector('')
   } else {
     menuMobile.classList.add('open');
     document.querySelector('.nav-toggler span').style.transform = 'rotate(180deg)';

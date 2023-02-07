@@ -1,4 +1,5 @@
 :root {
-    --skin-color:#1854b4;
+    --skin-color:rgba(24,84,180,1);
+    --skin-color-opacity: rgba(24,84,180, 0.8);
 }
 

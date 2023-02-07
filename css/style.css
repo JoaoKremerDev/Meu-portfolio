@@ -7,10 +7,6 @@
     --text-black-700:#504e70;
 }
 
-/* .section {
-    transform: translateX(150%);
-    position: fixed;
-} */
 
 body.dark{
     --bg-black-900:#151515; 
@@ -774,24 +770,26 @@ h3.my-profession {
         left: 0px;
         width: 100%;
         top: 0;
-        background-color: var(--skin-color);
-    }   
-
+        background-color: var(--skin-color-opacity);
+        font-family: Arial, Helvetica, sans-serif;
+    }
     .menu-mobile ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
         padding-top: 40px;
-    }   
-    
+    }
     .menu-mobile ul li a{
-        color: var(--text-black-900);
+        color: white;
         font-size: 16px;
+        padding: 5px 0px;
         opacity: 1;
+        display: block;
+        text-transform: uppercase;
     }
     .menu-mobile ul li a i{
-        color: var(--skin-color);
+        color: white;
         margin-right: 15px;
     }
     .section-title{
@@ -843,3 +841,9 @@ h3.my-profession {
     }
 }
 
+@media (max-width: 600px) {
+    .services .service-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
