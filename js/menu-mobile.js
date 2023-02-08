@@ -19,11 +19,14 @@ class MenuMobile {
   menuShow() {
     if (this.menuMobile.classList.contains('open')) {
       this.menuMobile.classList.remove('open');
-      document.querySelector('.aside .nav-toggler span').style.transform = 'rotate(0deg)';
+      document.querySelector('.aside .nav-toggler').style.transform = 'rotate(0deg)';
+      document.querySelector('.aside .nav-toggler i').classList.add('fa-bars');
       this.paddingTop(0);
     } else {
       this.menuMobile.classList.add('open');
-      document.querySelector('.aside .nav-toggler span').style.transform = 'rotate(180deg)';
+      document.querySelector('.aside .nav-toggler').style.transform = 'rotate(90deg)';
+      document.querySelector('.aside .nav-toggler i').classList.remove('fa-bars');
+      document.querySelector('.aside .nav-toggler i').classList.add('fa-x');   
       this.paddingTop(200);
     }
   }
@@ -31,7 +34,9 @@ class MenuMobile {
   closeMenu(event) {
     if (!this.menuMobile.contains(event.target) && !this.navToggler.contains(event.target)) {
       this.menuMobile.classList.remove('open');
-      document.querySelector('.nav-toggler span').style.transform = 'rotate(0deg)';
+      document.querySelector('.aside .nav-toggler ').style.transform = 'rotate(0deg)';
+      document.querySelector('.aside .nav-toggler i').classList.remove('fa-x');
+      document.querySelector('.aside .nav-toggler i').classList.add('fa-bars');
       this.paddingTop(0);
     }
   }
