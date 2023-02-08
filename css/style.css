@@ -7,6 +7,9 @@
     --text-black-700:#504e70;
 }
 
+a {
+    color: var(--text-black-900);
+}
 
 body.dark{
     --bg-black-900:#151515; 
