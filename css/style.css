@@ -7,9 +7,7 @@
     --text-black-700:#504e70;
 }
 
-a {
-    color: var(--text-black-900);
-}
+
 
 body.dark{
     --bg-black-900:#151515; 
@@ -41,6 +39,10 @@ ul {
     outline: none;
     text-decoration: none;
     box-sizing: border-box;
+}
+
+a {
+    color: var(--text-black-700);
 }
 
 ::before, ::after {
@@ -265,6 +267,9 @@ section .hidden{
     border-bottom: 1px solid var(--bg-black-500);
 }
 
+.active {
+    color: var(--skin-color);
+}
 .aside .nav li a.active {
     color: var(--skin-color)
 }
@@ -563,6 +568,7 @@ h3.my-profession {
 .services .service-item .service-item-inner {
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-500);
+    max-width: 100%;
     border-radius: 10px;
     padding: 30px 15px;
     text-align: center;
@@ -664,6 +670,7 @@ h3.my-profession {
     text-align: center;
     margin-bottom: 60px;
 }
+
 
 .contact .contact-info-item .icon {
     display: inline-block;
