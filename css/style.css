@@ -763,7 +763,7 @@ h3.my-profession {
         top: 0;
         background-color: var(--skin-color);
         border-bottom: 2px outset var(--bg-black-100);
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: sans-serif;
         transition: all .3s ease;
         transform: translateY(-100%);
     }
