@@ -20,6 +20,7 @@ class MenuMobile {
     if (this.menuMobile.classList.contains('open')) {
       this.menuMobile.classList.remove('open');
       document.querySelector('.aside .nav-toggler').style.transform = 'rotate(0deg)';
+      document.querySelector('.aside .nav-toggler i').classList.remove('fa-x');
       document.querySelector('.aside .nav-toggler i').classList.add('fa-bars');
       this.paddingTop(0);
     } else {
