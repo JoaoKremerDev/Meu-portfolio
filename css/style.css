@@ -723,6 +723,7 @@ h3.my-profession {
 
 .contact  .form-item .form-control:focus{
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    border: 1px solid var(--skin-color);
 }
 
 .contact  .form-item textarea.form-control {
