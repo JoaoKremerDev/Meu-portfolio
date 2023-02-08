@@ -53,13 +53,10 @@ section {
     padding: 0 30px;
     opacity: 1;
 }
-/* 
-.section .open-effect{
-    transform: translateX(-150px);
-} */
 
-
-
+.menu-mobile.open .section{
+    margin-top: 100px !important;
+}
 
 .main-content {
     padding-left: 270px;
@@ -773,7 +770,7 @@ h3.my-profession {
         left: 0px;
         width: 100%;
         top: 0;
-        background-color: var(--skin-color-opacity);
+        background-color: var(--skin-color);
         font-family: Arial, Helvetica, sans-serif;
     }
     .menu-mobile ul {
