@@ -19,11 +19,11 @@ class MenuMobile {
   menuShow() {
     if (this.menuMobile.classList.contains('open')) {
       this.menuMobile.classList.remove('open');
-      document.querySelector('.nav-toggler span').style.transform = 'rotate(0deg)';
+      document.querySelector('.aside .nav-toggler span').style.transform = 'rotate(0deg)';
       this.paddingTop(0);
     } else {
       this.menuMobile.classList.add('open');
-      document.querySelector('.nav-toggler span').style.transform = 'rotate(180deg)';
+      document.querySelector('.aside .nav-toggler span').style.transform = 'rotate(180deg)';
       this.paddingTop(200);
     }
   }
