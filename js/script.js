@@ -25,16 +25,27 @@ navLinkToggle();
 
 
 const accordionItems = document.querySelectorAll('.accordion .timeline-title')
-const accordionIcon = document.querySelector('.accordion .timeline-title i')
+
 
 accordionItems.forEach(item => {
     item.addEventListener('click', () => {
         const title = item;
         const text = title.nextElementSibling;
+        const icon = document.querySelectorAll('.accordion .timeline-title i');
+        const iconArray = [...icon]
+        const index = iconArray.indexOf(title.querySelector('i'));
         if (text.classList.contains('accordion-open')) {
             text.classList.remove('accordion-open');
+            iconArray.forEach(item => {
+                iconArray[index].classList.remove('fa-arrow-turn-up');
+                iconArray[index].classList.add('fa-arrow-turn-down');
+            })
         } else {
             text.classList.add('accordion-open');
+            iconArray.forEach(item => {
+                iconArray[index].classList.remove('fa-arrow-turn-down');
+                iconArray[index].classList.add('fa-arrow-turn-up');
+            })
         }
     })
 })
