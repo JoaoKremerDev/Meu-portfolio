@@ -551,6 +551,13 @@ h3.my-profession {
     color: var(--text-black-900);
     cursor: pointer;
     padding: 4px;
+    transition: all 0.3s ease;
+}
+.about .about-content .timeline .timeline-title:hover {
+    box-shadow: 0px 6px 12px 6px var(--skin-color);
+    border-radius: 4px;
+    width: 90%;
+    transition: all 0.3s ease;
 }
 .about .about-content .timeline .timeline-text {
     line-height: 25px;
