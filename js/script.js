@@ -25,6 +25,7 @@ navLinkToggle();
 
 
 const accordionItems = document.querySelectorAll('.accordion .timeline-title')
+const accordionIcon = document.querySelector('.accordion .timeline-title i')
 
 accordionItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -37,3 +38,13 @@ accordionItems.forEach(item => {
         }
     })
 })
+
+
+document.addEventListener('click', event => {
+    if (!event.target.closest('.accordion')) {
+        accordionItems.forEach(item => {
+            const text = item.nextElementSibling;
+            text.classList.remove('accordion-open');
+        });
+    }
+});

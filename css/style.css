@@ -561,10 +561,13 @@ h3.my-profession {
     height: 0px;
     transition: all .3s ease;
 }
-
-
 .about .about-content .timeline .timeline-text.accordion-open {
     height: 200px;
+}
+
+.about .about-content .timeline .timeline-title i {
+    color: var(--skin-color);
+    margin-left:10px;
 }
 
 
