@@ -24,38 +24,33 @@ function navLinkToggle() {
 navLinkToggle();
 
 
-const accordionItems = document.querySelectorAll('.accordion .timeline-title')
+const accordionItems = document.querySelectorAll('.accordion .timeline-title');
 
 
 accordionItems.forEach(item => {
     item.addEventListener('click', () => {
-        const title = item;
-        const text = title.nextElementSibling;
-        const icon = document.querySelectorAll('.accordion .timeline-title i');
-        const iconArray = [...icon]
-        const index = iconArray.indexOf(title.querySelector('i'));
-        if (text.classList.contains('accordion-open')) {
-            text.classList.remove('accordion-open');
-            iconArray.forEach(item => {
-                iconArray[index].classList.remove('fa-arrow-turn-up');
-                iconArray[index].classList.add('fa-arrow-turn-down');
-            })
-        } else {
-            text.classList.add('accordion-open');
-            iconArray.forEach(item => {
-                iconArray[index].classList.remove('fa-arrow-turn-down');
-                iconArray[index].classList.add('fa-arrow-turn-up');
-            })
+        const text = item.nextElementSibling;
+        const icon = item.querySelector('i');
+        text.classList.toggle('accordion-open');
+        if(icon.classList.contains('fa-arrow-turn-down')){
+            icon.classList.remove('fa-arrow-turn-down')
+            icon.classList.add('fa-arrow-turn-up');
+        }else {
+            icon.classList.remove('fa-arrow-turn-up');
+            icon.classList.toggle('fa-arrow-turn-down');
         }
-    })
-})
-
+    });
+});
 
 document.addEventListener('click', event => {
     if (!event.target.closest('.accordion')) {
         accordionItems.forEach(item => {
+            const icon = item.querySelector('i');
             const text = item.nextElementSibling;
             text.classList.remove('accordion-open');
+            if(icon.classList.contains('fa-arrow-turn-up')){
+                icon.classList.add('fa-arrow-turn-down');
+            }
         });
     }
 });
