@@ -54,3 +54,8 @@ document.addEventListener('click', event => {
         });
     }
 });
+
+
+window.addEventListener('scroll', () => {
+        
+})

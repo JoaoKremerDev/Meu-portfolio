@@ -265,6 +265,11 @@ section .hidden{
     color: var(--text-black-900);
     padding: 5px 15px;
     border-bottom: 1px solid var(--bg-black-500);
+    transition: all 0.4s ease;
+}
+
+.aside .nav li a:hover {
+box-shadow: 0px 2px 12px 2px var(--skin-color);
 }
 
 .active {
@@ -559,6 +564,7 @@ h3.my-profession {
     width: 90%;
     transition: all 0.3s ease;
 }
+
 .about .about-content .timeline .timeline-text {
     line-height: 25px;
     font-size: 16px;
@@ -827,7 +833,14 @@ h3.my-profession {
     .section-title{
         margin-top: 70px;
     }
-
+    .about .about-content .timeline .timeline-title:hover {
+        box-shadow: none;
+        border-radius: 0;
+        transition: none;
+    }
+    .aside .nav li a:hover {
+        box-shadow: none; 
+    }
 }
 
 @media (max-width: 991px){

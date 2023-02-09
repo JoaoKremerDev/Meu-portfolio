@@ -44,5 +44,4 @@ class MenuMobile {
 }
 
 const menu = new MenuMobile('.menu-mobile', '.nav-toggler');
-  
 
