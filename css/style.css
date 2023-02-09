@@ -678,6 +678,9 @@ h3.my-profession {
 .portfolio-item .portfolio-item-inner .portfolio-img img{
     display: block;
     width: 100%;
+    min-height: 300px;
+    object-fit:fill;
+
 }
 /* CONTATO */
 

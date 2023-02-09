@@ -44,7 +44,3 @@ class MenuMobile {
 }
 
 const menu = new MenuMobile('.menu-mobile', '.nav-toggler');
-
-window.addEventListener('scroll', () => {
-  menu.closeMenu('.menu-mobile', '.nav-toggler');
-})
