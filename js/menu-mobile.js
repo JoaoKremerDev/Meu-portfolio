@@ -40,16 +40,9 @@ class MenuMobile {
       document.querySelector('.aside .nav-toggler i').classList.add('fa-bars');
       this.paddingTop(0);
     }
-  }
-
-  init() {
-    bindEvents();
-    paddingTop(paddingTop);
-    menuShow();
-    closeMenu();
-  }
+  }  
 }
+
 const menu = new MenuMobile('.menu-mobile', '.nav-toggler');
-menu.init();
 
 

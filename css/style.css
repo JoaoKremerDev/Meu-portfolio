@@ -568,7 +568,10 @@ h3.my-profession {
 .services .service-item .service-item-inner {
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-500);
+    align-items: stretch;
     max-width: 100%;
+    min-height: 265px;
+    max-height: 100%;
     border-radius: 10px;
     padding: 30px 15px;
     text-align: center;
@@ -741,6 +744,7 @@ h3.my-profession {
     height: 50px;
     padding: 0 50px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 @media (max-width: 1199px){
