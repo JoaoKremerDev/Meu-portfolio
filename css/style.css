@@ -675,13 +675,31 @@ h3.my-profession {
     cursor: pointer;
 }
 
-.portfolio-item .portfolio-item-inner .portfolio-img img{
+.portfolio-item-inner .portfolio-img img{
     display: block;
     width: 100%;
     min-height: 300px;
     object-fit:fill;
-
 }
+.portfolio-img{
+    position: relative;
+}
+
+.portfolio-box-container {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    z-index: 999;
+  }
+  
+.portfolio-box-container.open-container {
+    display: block;
+  }
+
 /* CONTATO */
 
 .contact-title {

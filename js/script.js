@@ -24,6 +24,8 @@ function navLinkToggle() {
 navLinkToggle();
 
 
+
+// ESSA PARTE DO CÓDIGO CUIDAD DO ACCORDION DA SESSÃO SOBRE
 const accordionItems = document.querySelectorAll('.accordion .timeline-title');
 
 
@@ -56,3 +58,13 @@ document.addEventListener('click', event => {
 });
 
 
+// ESSA PARTE DO CÓDIGO É REFERENTE AOS PROJETOS E O SEU CLICK
+const portfolioImgs = document.querySelectorAll(".portfolio-img img");
+const portfolioBox = document.querySelectorAll(".portfolio-box-container");
+const portfolioBoxContainers = [...portfolioBox]
+
+portfolioImgs.forEach((item, index)  => {
+  item.addEventListener("click", function(event) {
+    portfolioBoxContainers[index].classList.toggle('open-container');
+  });
+});
