@@ -74,6 +74,7 @@ function removeBoxContainer (event) {
     const nextElement = element.nextElementSibling;
     nextElement.classList.remove('open-container');
 }
+
 const repoLink = Array.from(document.querySelectorAll('.portfolio-box-container .repo a'));
 const siteLink = Array.from(document.querySelectorAll('.portfolio-box-container .site a'));
 
@@ -91,10 +92,11 @@ portfolioImgs.forEach((item, index) => {
                 relatedTargetInLinks = true;
             }
         });
-    
+
         if (event.relatedTarget === null || relatedTargetInLinks) {
             return;
         }
         removeBoxContainer(event);
     });  
 })
+
