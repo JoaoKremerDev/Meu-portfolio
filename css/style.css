@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 :root {
-    --bg-black-900:#f2f2fc;
-    --bg-black-100:#fdf9ff;
-    --bg-black-500:#e8dfec;
-    --text-black-900:#302e4d;
-    --text-black-700:#504e70;
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-500: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
 }
 
 
 
-body.dark{
-    --bg-black-900:#151515; 
-    --bg-black-100:#222222;
-    --bg-black-500:#393939;
-    --text-black-900:#ffffff;
-    --text-black-700:#e9e9e9;
+body.dark {
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --bg-black-500: #393939;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
 }
 
 .hidden {
@@ -33,7 +34,7 @@ ul {
     list-style: none;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     outline: none;
@@ -45,9 +46,11 @@ a {
     color: var(--text-black-700);
 }
 
-::before, ::after {
+::before,
+::after {
     box-sizing: border-box;
 }
+
 section {
     background: var(--bg-black-900);
     min-height: 100vh;
@@ -58,11 +61,11 @@ section {
     transform: translateX(0);
 }
 
-section .hidden{
+section .hidden {
     transform: translateX(200%);
 }
 
-.menu-mobile.open .section{
+.menu-mobile.open .section {
     margin-top: 100px !important;
 }
 
@@ -141,7 +144,7 @@ section .hidden{
     white-space: nowrap;
     border: none;
     border-radius: 40px;
-    transition:  all 0.3 ease;
+    transition: all 0.3 ease;
 }
 
 .btn:hover {
@@ -149,7 +152,7 @@ section .hidden{
 }
 
 .shadow-dark {
-    box-shadow:  0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
 /*aside*/
@@ -170,7 +173,7 @@ section .hidden{
 }
 
 .aside .logo {
-    position:  absolute;
+    position: absolute;
     top: 50px;
     font-size: 30px;
     text-transform: capitalize;
@@ -186,7 +189,7 @@ section .hidden{
 }
 
 .aside .logo a span {
-    font-family:  'Clicker Script' cursive;
+    font-family: 'Clicker Script' cursive;
     font-size: 40px;
 }
 
@@ -244,7 +247,7 @@ section .hidden{
 
 
 
-.open{
+.open {
     display: block;
 }
 
@@ -269,12 +272,13 @@ section .hidden{
 }
 
 .aside .nav li a:hover {
-box-shadow: 0px 2px 12px 2px var(--skin-color);
+    box-shadow: 0px 2px 12px 2px var(--skin-color);
 }
 
 .active {
     color: var(--skin-color);
 }
+
 .aside .nav li a.active {
     color: var(--skin-color)
 }
@@ -409,13 +413,14 @@ h3.my-profession {
     color: var(--text-black-900);
     border-bottom: 1px solid var(--bg-black-500);
 }
-    
-.about .about-content .personal-info .info-item p span{
+
+.about .about-content .personal-info .info-item p span {
     font-weight: 400;
     color: var(--text-black-700);
     margin-left: 4px;
     display: inline-block;
 }
+
 .about .about-content .personal-info .info-item {
     flex: 0 0 60%;
     max-width: 60%;
@@ -495,7 +500,7 @@ h3.my-profession {
 
 
 .about .about-content .timeline-box {
-    flex:  0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
 }
 
@@ -529,7 +534,7 @@ h3.my-profession {
 }
 
 .about .about-content .timeline .circle-dot {
-    position:  absolute;
+    position: absolute;
     left: 0;
     top: 0;
     height: 15px;
@@ -539,11 +544,12 @@ h3.my-profession {
 }
 
 .about .about-content .timeline .timeline-date {
-    font-weight:  400;
+    font-weight: 400;
     font-size: 14px;
     margin-bottom: 12px;
     color: var(--text-black-700);
 }
+
 .about .about-content .timeline .timeline-date .fa {
     margin: 5px;
 }
@@ -558,6 +564,7 @@ h3.my-profession {
     padding: 4px;
     transition: all 0.3s ease;
 }
+
 .about .about-content .timeline .timeline-title:hover {
     box-shadow: 0px 6px 12px 6px var(--skin-color);
     border-radius: 4px;
@@ -574,13 +581,14 @@ h3.my-profession {
     height: 0px;
     transition: all .3s ease;
 }
+
 .about .about-content .timeline .timeline-text.accordion-open {
     height: 200px;
 }
 
 .about .about-content .timeline .timeline-title i {
     color: var(--skin-color);
-    margin-left:10px;
+    margin-left: 10px;
 }
 
 
@@ -648,7 +656,7 @@ h3.my-profession {
 .services .service-item .service-item-inner p {
     font-size: 16px;
     color: var(--text-black-700);
-    line-height: 25px;   
+    line-height: 25px;
 }
 
 .portfolio .portfolio-heading {
@@ -675,13 +683,14 @@ h3.my-profession {
     cursor: pointer;
 }
 
-.portfolio-item-inner .portfolio-img img{
+.portfolio-item-inner .portfolio-img img {
     display: block;
     width: 100%;
     min-height: 300px;
-    object-fit:fill;
+    object-fit: fill;
 }
-.portfolio-img{
+
+.portfolio-img {
     position: relative;
 }
 
@@ -692,13 +701,42 @@ h3.my-profession {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: red;
-    z-index: 999;
-  }
-  
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    pointer-events: none;
+}
+
 .portfolio-box-container.open-container {
     display: block;
-  }
+}
+
+.portfolio-box-container .repo i,
+.portfolio-box-container .site i{
+    position: relative;
+    font-size: 22px;
+    margin-right: 10px;
+    box-shadow: 0px 6px 15px 6px var(--skin-color);
+    border-radius: 50%;
+}
+
+.portfolio-box-container .repo a,
+.portfolio-box-container .site a {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 40px;
+    font-size: 20px;
+    pointer-events: all;
+    color: white;
+}
+
+.portfolio-box-container .site a {
+    margin-top: 135px;
+}
+
+.portfolio-box-container .repo {
+    margin-bottom: 10px;
+}
+
 
 /* CONTATO */
 
@@ -708,6 +746,7 @@ h3.my-profession {
     font-size: 25px;
     margin-bottom: 20px;
 }
+
 .contact-sub-title {
     color: var(--text-black-900);
     text-align: center;
@@ -727,12 +766,12 @@ h3.my-profession {
     display: inline-block;
 }
 
-.contact .contact-info-item .icon .fa{
+.contact .contact-info-item .icon .fa {
     font-size: 25px;
     color: var(--skin-color);
 }
 
-.contact .contact-info-item h4{
+.contact .contact-info-item h4 {
     font-size: 18px;
     font-weight: 700;
     color: var(--text-black-700);
@@ -740,7 +779,7 @@ h3.my-profession {
     margin: 15px 0 5px;
 }
 
-.contact .contact-info-item p{
+.contact .contact-info-item p {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-black-700);
@@ -757,12 +796,13 @@ h3.my-profession {
     flex: 0 0 50%;
     max-width: 50%;
 }
-.contact .form-item.col-12{
+
+.contact .form-item.col-12 {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.contact  .form-item {
+.contact .form-item {
     margin-bottom: 30px
 }
 
@@ -779,12 +819,12 @@ h3.my-profession {
     cursor: pointer;
 }
 
-.contact  .form-item .form-control:focus{
+.contact .form-item .form-control:focus {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
     border: 1px solid var(--skin-color);
 }
 
-.contact  .form-item textarea.form-control {
+.contact .form-item textarea.form-control {
     height: 140px;
 }
 
@@ -795,29 +835,33 @@ h3.my-profession {
     cursor: pointer;
 }
 
-@media (max-width: 1199px){
-    .aside{
+@media (max-width: 1199px) {
+    .aside {
         left: -270px;
     }
-    .main-content{
+
+    .main-content {
         padding-left: 0;
     }
-    .about .about-content .personal-info .info-item p span{
+
+    .about .about-content .personal-info .info-item p span {
         display: block;
         margin-left: 0px;
     }
-    .about .about-content .personal-info .info-item{
+
+    .about .about-content .personal-info .info-item {
         flex: 0 0 50%;
         max-width: 50%;
     }
-    
+
     .aside .nav-toggler {
         display: inline-block;
         z-index: 1;
     }
+
     .menu-mobile {
         display: block;
-        position: fixed;    
+        position: fixed;
         left: 0px;
         width: 100%;
         top: 0;
@@ -828,7 +872,7 @@ h3.my-profession {
         transform: translateY(-100%);
     }
 
-    .menu-mobile.open{
+    .menu-mobile.open {
         transform: translateY(0px);
     }
 
@@ -839,7 +883,8 @@ h3.my-profession {
         padding-bottom: 1rem;
         padding-top: 40px;
     }
-    .menu-mobile ul li a{
+
+    .menu-mobile ul li a {
         color: white;
         font-size: 16px;
         padding: 5px 0px;
@@ -847,48 +892,57 @@ h3.my-profession {
         display: block;
         text-transform: uppercase;
     }
-    .menu-mobile ul li a i{
+
+    .menu-mobile ul li a i {
         color: white;
         margin-right: 15px;
     }
-    .section-title{
+
+    .section-title {
         margin-top: 70px;
     }
+
     .about .about-content .timeline .timeline-title:hover {
         box-shadow: none;
         border-radius: 0;
         transition: none;
     }
+
     .aside .nav li a:hover {
-        box-shadow: none; 
+        box-shadow: none;
     }
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
+
     .contact .contact-info-item,
     .portfolio .portfolio-item,
-    .service .service-item{
+    .service .service-item {
         flex: 0 0 50%;
         max-width: 50%;
     }
+
     .portfolio .portfolio-item,
-    .service .service-item{
+    .service .service-item {
         flex: 0 0 50%;
         max-width: 50%;
     }
+
     .about .about-content .education,
     .about .about-content .experience,
     .home .home-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .home .home-img{
+
+    .home .home-img {
         display: none;
     }
 
 }
 
 @media (max-width: 767px) {
+
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
@@ -896,12 +950,14 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     .about .about-content .skills,
-    .about .about-content .personal-info{
+    .about .about-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .about .about-content .personal-info .info-item{
+
+    .about .about-content .personal-info .info-item {
         flex: 0 0 50%;
         max-width: 50%;
     }
@@ -912,7 +968,8 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .about .about-content .personal-info .info-item{
+
+    .about .about-content .personal-info .info-item {
         flex: 0 0 100%;
         max-width: 100%;
     }

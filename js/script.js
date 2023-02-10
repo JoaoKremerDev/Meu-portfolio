@@ -59,12 +59,42 @@ document.addEventListener('click', event => {
 
 
 // ESSA PARTE DO CÓDIGO É REFERENTE AOS PROJETOS E O SEU CLICK
+// FALTA AJEITAR O TOGGLE
 const portfolioImgs = document.querySelectorAll(".portfolio-img img");
 const portfolioBox = document.querySelectorAll(".portfolio-box-container");
 const portfolioBoxContainers = [...portfolioBox]
 
-portfolioImgs.forEach((item, index)  => {
-  item.addEventListener("click", function(event) {
-    portfolioBoxContainers[index].classList.toggle('open-container');
-  });
-});
+function addBoxContainer (event) {
+    const element = event.target;
+    const nextElement = element.nextElementSibling;
+    nextElement.classList.add('open-container');
+}
+function removeBoxContainer (event) {
+    const element = event.target;
+    const nextElement = element.nextElementSibling;
+    nextElement.classList.remove('open-container');
+}
+const repoLink = Array.from(document.querySelectorAll('.portfolio-box-container .repo a'));
+const siteLink = Array.from(document.querySelectorAll('.portfolio-box-container .site a'));
+
+portfolioImgs.forEach((item, index) => {
+    item.addEventListener('mouseenter', addBoxContainer);
+    item.addEventListener('mouseleave', (event) => {
+        let relatedTargetInLinks = false;
+        repoLink.forEach((link) => {
+            if (event.relatedTarget === link) {
+                relatedTargetInLinks = true;
+            }
+        });
+        siteLink.forEach((link) => {
+            if (event.relatedTarget === link) {
+                relatedTargetInLinks = true;
+            }
+        });
+    
+        if (event.relatedTarget === null || relatedTargetInLinks) {
+            return;
+        }
+        removeBoxContainer(event);
+    });  
+})
